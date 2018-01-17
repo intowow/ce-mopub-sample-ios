@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[UIView(CELayoutAdditions) ce_fitSuperview]:UIView+CELayoutAdditions.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[CENativeAdRenderer retrieveViewWithAdapter:error:]:CENativeAdRenderer.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "iconImageView.image">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__52-[CENativeAdRenderer retrieveViewWithAdapter:error:]_block_invoke_2:CENativeAdRenderer.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "adapter">
+            </PersistentString>
+            <PersistentString
+               value = "iconImageView.image">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[MPNativeAd retrieveAdViewWithError:]:MPNativeAd.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.associatedView">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[CECardCustomEvent cardADDidLoaded:]:CECardCustomEvent.m">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Ad View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="AdViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view alpha="0.0" contentMode="scaleToFill" id="LMB-ol-A2A" userLabel="adUIView">
+                                <rect key="frame" x="13" y="78" width="349" height="350"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" id="zvA-sw-S5e">
+                                        <rect key="frame" x="7" y="45" width="335" height="235"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Uv2-PF-CKw">
+                                        <rect key="frame" x="8" y="307" width="336" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.90196078431372551" green="0.90196078431372551" blue="0.90196078431372551" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" id="g9P-Ha-tgv" userLabel="DummyView">
+                                        <rect key="frame" x="7" y="0.0" width="336" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ln1-uD-6JD">
+                                                <rect key="frame" x="44" y="5" width="166" height="35"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Iu1-2J-JSK" userLabel="iconImageView">
+                                                <rect key="frame" x="4" y="4" width="35" height="35"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <view contentMode="scaleToFill" id="9Ag-bw-yDC" userLabel="CallToActionWrapperView">
+                                                <rect key="frame" x="185" y="9" width="151" height="35"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ZwL-B3-iAz">
+                                                        <rect key="frame" x="0.0" y="0.0" width="145" height="30"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES"/>
+                                                    </button>
+                                                </subviews>
+                                            </view>
+                                        </subviews>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="0.37" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="QEZ-AP-O9p">
+                                <rect key="frame" x="13" y="494" width="349" height="40"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" red="0.91716746790000003" green="0.64823166369999996" blue="0.60826240980000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Load Banner AD"/>
+                                <connections>
+                                    <action selector="loadBannerAd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WoV-Ic-klr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="M4R-4D-Ex4">
+                                <rect key="frame" x="13" y="446" width="349" height="40"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" red="0.91716746790000003" green="0.64823166369999996" blue="0.60826240980000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Load Native AD"/>
+                                <connections>
+                                    <action selector="loadNativeAd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ph1-5H-59Z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="e5i-bZ-ada">
+                                <rect key="frame" x="13" y="542" width="349" height="40"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" red="0.91716746790000003" green="0.64823166369999996" blue="0.60826240980000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Load Interstitial AD"/>
+                                <connections>
+                                    <action selector="loadInterstitialAd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rma-pa-Xiq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="53n-Qf-PJf">
+                                <rect key="frame" x="13" y="590" width="349" height="40"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" red="0.91716746790000003" green="0.64823166369999996" blue="0.60826240980000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Load Rewarded AD"/>
+                                <connections>
+                                    <action selector="loadRewardedAd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lwZ-op-EJb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </view>
+                    <navigationItem key="navigationItem" id="PKi-sX-eg5"/>
+                    <connections>
+                        <outlet property="adBody" destination="Uv2-PF-CKw" id="bbz-uN-Zpm"/>
+                        <outlet property="adIconImageView" destination="Iu1-2J-JSK" id="C6Z-WZ-4Sg"/>
+                        <outlet property="adMediaCoverView" destination="zvA-sw-S5e" id="rpF-HQ-FhP"/>
+                        <outlet property="adTitle" destination="ln1-uD-6JD" id="PVb-ts-3TS"/>
+                        <outlet property="adUIView" destination="LMB-ol-A2A" id="DGt-sr-Hrd"/>
+                        <outlet property="callToActionBtn" destination="ZwL-B3-iAz" id="D6D-Nv-RnQ"/>
+                        <outlet property="callToActionWrapper" destination="9Ag-bw-yDC" id="8zi-6x-bKW"/>
+                        <outlet property="loadAdBtn" destination="M4R-4D-Ex4" id="hCs-oP-bBe"/>
+                        <outlet property="loadBannerBtn" destination="QEZ-AP-O9p" id="LhB-5s-MUA"/>
+                        <outlet property="loadInterstitialBtn" destination="e5i-bZ-ada" id="dCv-D1-GOZ"/>
+                        <outlet property="loadRewardedBtn" destination="53n-Qf-PJf" id="Tvz-W0-Fy8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1176.5" y="-1492.5"/>
+        </scene>
+    </scenes>
+</document>
