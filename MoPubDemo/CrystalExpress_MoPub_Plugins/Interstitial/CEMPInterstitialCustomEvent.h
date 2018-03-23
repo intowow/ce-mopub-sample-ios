@@ -1,6 +1,6 @@
-//  Minimum support Intowow SDK 3.20.4
+//  Minimum support Intowow SDK 3.26.1
 //
-//  CEInterstitialCustomEvent.h
+//  CEMPInterstitialCustomEvent.h
 //
 //  Copyright © 2017 intowow. All rights reserved.
 //
@@ -11,6 +11,6 @@
 #import "MPInterstitialCustomEvent.h"
 #endif
 
-@interface CEInterstitialCustomEvent : MPInterstitialCustomEvent
+@interface CEMPInterstitialCustomEvent : MPInterstitialCustomEvent
 
 @end

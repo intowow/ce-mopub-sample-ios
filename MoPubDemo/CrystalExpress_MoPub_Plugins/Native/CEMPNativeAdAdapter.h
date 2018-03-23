@@ -1,6 +1,6 @@
-//  Minimum support Intowow SDK 3.14.0
+//  Minimum support Intowow SDK 3.26.1
 //
-//  CENativeAdAdapter.h
+//  CEMPNativeAdAdapter.h
 //
 //  Copyright © 2017 intowow. All rights reserved.
 //
@@ -14,7 +14,7 @@
 
 @class CENativeAd;
 
-@interface CENativeAdAdapter : NSObject <MPNativeAdAdapter>
+@interface CEMPNativeAdAdapter : NSObject <MPNativeAdAdapter>
 
 @property (nonatomic, weak) id<MPNativeAdAdapterDelegate> delegate;
 

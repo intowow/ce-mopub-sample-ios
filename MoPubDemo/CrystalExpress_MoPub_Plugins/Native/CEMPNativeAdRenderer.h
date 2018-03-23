@@ -1,6 +1,6 @@
-//  Minimum support Intowow SDK 3.14.0
+//  Minimum support Intowow SDK 3.26.1
 //
-//  CENativeAdRenderer.h
+//  CEMPNativeAdRenderer.h
 //
 //  Copyright © 2017 intowow. All rights reserved.
 //
@@ -13,7 +13,7 @@
 #endif
 
 @class MPNativeAdRendering;
-@interface CENativeAdRenderer : NSObject <MPNativeAdRenderer>
+@interface CEMPNativeAdRenderer : NSObject <MPNativeAdRenderer>
 
 @property (nonatomic, readonly) MPNativeViewSizeHandler viewSizeHandler;
 

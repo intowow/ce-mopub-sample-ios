@@ -1,24 +1,24 @@
-//  Minimum support Intowow SDK 3.20.4
+//  Minimum support Intowow SDK 3.26.1
 //
-//  CEInterstitialCustomEvent.m
+//  CEMPInterstitialCustomEvent.m
 //
 //  Copyright © 2017 intowow. All rights reserved.
 //
 
-#import "CEInterstitialCustomEvent.h"
+#import "CEMPInterstitialCustomEvent.h"
 #import "CESplash2AD.h"
 #import "MPLogging.h"
 
 #define Default_Interstitial_Timeout 10
 
-@interface CEInterstitialCustomEvent () <CESplash2ADDelegate>
+@interface CEMPInterstitialCustomEvent () <CESplash2ADDelegate>
 
 @property (nonatomic, strong) CESplash2AD *ceSplashAD;
 
 @end
 
 
-@implementation CEInterstitialCustomEvent
+@implementation CEMPInterstitialCustomEvent
 
 - (void)requestInterstitialWithCustomEventInfo:(NSDictionary *)info
 {
@@ -34,10 +34,12 @@
         [I2WAPI setAudienceTargetingUserTags:[NSSet setWithArray:audienceTags]];
 
         MPLogInfo(@"Requesting CESplashAD");
-        _ceSplashAD = [[CESplash2AD alloc] initWithPlacement:placement];
+        CERequestInfo *reqInfo = [CERequestInfo new];
+        reqInfo.placement = placement;
+        reqInfo.timeout = Default_Interstitial_Timeout;
+        _ceSplashAD = [[CESplash2AD alloc] initWithVideoViewProfile:CEVideoViewProfileSplash2DefaultProfile];
         [_ceSplashAD setDelegate:self];
-        [_ceSplashAD loadAdWithTimeout:Default_Interstitial_Timeout];
-
+        [_ceSplashAD loadAdWithInfo:reqInfo];
     }
     @catch(NSException *e) {
         MPLogError(@"CrystalExpress Interstitial failed to load with error : %@", e);

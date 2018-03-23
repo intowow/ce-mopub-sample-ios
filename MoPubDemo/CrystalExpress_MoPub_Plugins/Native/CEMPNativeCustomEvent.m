@@ -1,27 +1,27 @@
-//  Minimum support Intowow SDK 3.14.0
+//  Minimum support Intowow SDK 3.26.1
 //
-//  CENativeCustomEvent.m
+//  CEMPNativeCustomEvent.m
 //
 //  Copyright © 2017 intowow. All rights reserved.
 //
 
-#import "CENativeCustomEvent.h"
+#import "CEMPNativeCustomEvent.h"
 #import "CENativeAd.h"
-#import "CENativeAdAdapter.h"
+#import "CEMPNativeAdAdapter.h"
 #import "MPNativeAd.h"
 #import "MPNativeAdError.h"
 #import "MPLogging.h"
 
 #define Default_Native_Timeout 10
 
-@interface CENativeCustomEvent () <CENativeAdDelegate>
+@interface CEMPNativeCustomEvent () <CENativeAdDelegate>
 
 @property (nonatomic, readwrite, strong) CENativeAd * ceNativeAd;
 @property (nonatomic, readwrite, strong) NSDictionary * serverInfo;
 
 @end
 
-@implementation CENativeCustomEvent
+@implementation CEMPNativeCustomEvent
 
 - (void)requestAdWithCustomEventInfo:(NSDictionary *)info
 {
@@ -37,15 +37,18 @@
     NSArray *audienceTags = [info objectForKey:@"audience_tags"];
     [I2WAPI setAudienceTargetingUserTags:[NSSet setWithArray:audienceTags]];
 
-    _ceNativeAd = [[CENativeAd alloc] initWithPlacement:placement];
+    CERequestInfo *reqInfo = [CERequestInfo new];
+    reqInfo.placement = placement;
+    reqInfo.timeout = Default_Native_Timeout;
+    _ceNativeAd = [[CENativeAd alloc] init];
     _ceNativeAd.delegate = self;
-    [_ceNativeAd loadAdWithTimeout:Default_Native_Timeout];
+    [_ceNativeAd loadAdWithInfo:reqInfo];
 }
 
 #pragma mark - CENativeAdDelegate
 - (void) nativeAdDidLoad:(CENativeAd *)nativeAd
 {
-    CENativeAdAdapter *adAdapter = [[CENativeAdAdapter alloc] initWithCENativeAd:nativeAd adProperties:_serverInfo];
+    CEMPNativeAdAdapter *adAdapter = [[CEMPNativeAdAdapter alloc] initWithCENativeAd:nativeAd adProperties:_serverInfo];
     MPNativeAd * interfaceAd = [[MPNativeAd alloc] initWithAdAdapter:adAdapter];
     
     NSMutableArray *imageURLs = [NSMutableArray array];

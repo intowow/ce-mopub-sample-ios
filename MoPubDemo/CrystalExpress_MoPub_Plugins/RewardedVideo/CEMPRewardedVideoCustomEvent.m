@@ -1,23 +1,23 @@
-//  Minimum support Intowow SDK 3.21.0
+//  Minimum support Intowow SDK 3.26.1
 //
-//  CERewardedVideoCustomEvent.m
+//  CEMPRewardedVideoCustomEvent.m
 //
 //  Copyright © 2017 intowow. All rights reserved.
 //
 
-#import "CERewardedVideoCustomEvent.h"
+#import "CEMPRewardedVideoCustomEvent.h"
 #import "CERewardedVideoAD.h"
 #import "MPLogging.h"
 
 #define Default_Rewarded_Timeout 10
 
-@interface CERewardedVideoCustomEvent () <CERewardedVideoADDelegate>
+@interface CEMPRewardedVideoCustomEvent () <CERewardedVideoADDelegate>
 
 @property (nonatomic, strong) CERewardedVideoAD *ceRewardedAD;
 
 @end
 
-@implementation CERewardedVideoCustomEvent
+@implementation CEMPRewardedVideoCustomEvent
 
 - (void)requestRewardedVideoWithCustomEventInfo:(NSDictionary *)info
 {
@@ -33,9 +33,12 @@
         [I2WAPI setAudienceTargetingUserTags:[NSSet setWithArray:audienceTags]];
 
         MPLogInfo(@"Requesting CERewardedVideoAD");
-        _ceRewardedAD = [[CERewardedVideoAD alloc] initWithPlacement:placement];
+        CERequestInfo *reqInfo = [CERequestInfo new];
+        reqInfo.placement = placement;
+        reqInfo.timeout = Default_Rewarded_Timeout;
+        _ceRewardedAD = [[CERewardedVideoAD alloc] init];
         [_ceRewardedAD setDelegate:self];
-        [_ceRewardedAD loadAdWithTimeout:Default_Rewarded_Timeout];
+        [_ceRewardedAD loadAdWithInfo:reqInfo];
     }
     @catch(NSException *e) {
         MPLogError(@"CrystalExpress rewarded video failed to load with error : %@", e);

@@ -1,6 +1,6 @@
-//  Minimum support Intowow SDK 3.14.0
+//  Minimum support Intowow SDK 3.26.1
 //
-//  CENativeCustomEvent.h
+//  CEMPNativeCustomEvent.h
 //
 //  Copyright © 2017 intowow. All rights reserved.
 //
@@ -12,6 +12,6 @@
     #import "MPNativeCustomEvent.h"
 #endif
 
-@interface CENativeCustomEvent : MPNativeCustomEvent
+@interface CEMPNativeCustomEvent : MPNativeCustomEvent
 
 @end

@@ -1,6 +1,6 @@
-//  Minimum support Intowow SDK 3.14.0
+//  Minimum support Intowow SDK 3.26.1
 //
-//  CECardCustomEvent.h
+//  CEMPCardCustomEvent.h
 //
 //  Copyright © 2017 intowow. All rights reserved.
 //
@@ -11,6 +11,6 @@
     #import "MPBannerCustomEvent.h"
 #endif
 
-@interface CECardCustomEvent : MPBannerCustomEvent
+@interface CEMPCardCustomEvent : MPBannerCustomEvent
 
 @end
