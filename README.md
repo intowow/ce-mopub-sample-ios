@@ -17,7 +17,7 @@ CrystalExpress provides four ad formats for MoPub mediation. The relationship be
 
 Before you start add CrystalExpress as Custom network, you have to integrate MoPub SDK by following the instructions on the [MoPub website](https://github.com/mopub/mopub-ios-sdk/wiki/Getting-Started#app-transport-security-settings).
 
-** NOTICE: This porject does not contain CrystalExpress SDK. Please contact your Intowow account manager. We will provide the appropriate version of SDK and Crystal ID to fit your needs.**
+** NOTICE: This porject does not contain CrystalExpress SDK. Please contact your Intowow account manager. We will provide the appropriate version of SDK and Crystal ID to fit your needs.**
 
 The custom event is under folder 'MoPubDemo/CrystalExpress_MoPub_Plugins/'
 
