@@ -1,24 +1,24 @@
-//  Minimum support Intowow SDK 3.14.0
+//  Minimum support Intowow SDK 3.26.1
 //
-//  CENativeAdAdapter.m
+//  CEMPNativeAdAdapter.m
 //
 //  Copyright © 2017 intowow. All rights reserved.
 //
 
-#import "CENativeAdAdapter.h"
+#import "CEMPNativeAdAdapter.h"
 #import "MPNativeAdConstants.h"
 #import "CENativeAd.h"
 #import "CEMediaView.h"
 #import "CEVideoViewProfile.h"
 
-@interface CENativeAdAdapter () <CENativeAdDelegate>
+@interface CEMPNativeAdAdapter () <CENativeAdDelegate>
 
 @property (nonatomic, readonly) CENativeAd * ceNativeAd;
 @property (nonatomic, readonly) CEMediaView * ceMediaView;
 
 @end
 
-@implementation CENativeAdAdapter
+@implementation CEMPNativeAdAdapter
 
 @synthesize properties = _properties;
 

@@ -1,25 +1,25 @@
-//  Minimum support Intowow SDK 3.14.0
+//  Minimum support Intowow SDK 3.26.1
 //
-//  CECardCustomEvent.m
+//  CEMPCardCustomEvent.m
 //
 //  Copyright © 2017 intowow. All rights reserved.
 //
 
-#import "CECardCustomEvent.h"
+#import "CEMPCardCustomEvent.h"
 #import "CECardAD.h"
 #import "MPLogging.h"
 #import "UIView+CELayoutAdditions.h"
 
 #define Default_Card_Timeout 10
 
-@interface CECardCustomEvent () <CECardADDelegate>
+@interface CEMPCardCustomEvent () <CECardADDelegate>
 
 @property (nonatomic, strong) CECardAD *ceCardAd;
 @property (nonatomic, assign) CGSize adSize;
 
 @end
 
-@implementation CECardCustomEvent
+@implementation CEMPCardCustomEvent
 
 - (BOOL)enableAutomaticImpressionAndClickTracking
 {
@@ -40,9 +40,12 @@
     [I2WAPI setAudienceTargetingUserTags:[NSSet setWithArray:audienceTags]];
 
     MPLogInfo(@"Requesting CECardAd");
-    _ceCardAd = [[CECardAD alloc] initWithPlacement:placement];
+    CERequestInfo *reqInfo = [CERequestInfo new];
+    reqInfo.placement = placement;
+    reqInfo.timeout = Default_Card_Timeout;
+    _ceCardAd = [[CECardAD alloc] initWithVideoViewProfile:CEVideoViewProfileCardDefaultProfile];
     [_ceCardAd setDelegate:self];
-    [_ceCardAd loadAdWithTimeout:Default_Card_Timeout];
+    [_ceCardAd loadAdWithInfo:reqInfo];
 }
 
 #pragma mark - CECardADDelegate

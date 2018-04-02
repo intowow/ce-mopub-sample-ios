@@ -13,7 +13,7 @@
 #import "MoPubNativeAdView.h"
 #import "MPNativeAdConstants.h"
 #import "MPNativeAdRendererConfiguration.h"
-#import "CENativeAdRenderer.h"
+#import "CEMPNativeAdRenderer.h"
 #import "MoPub.h"
 
 @interface AdViewController ()
@@ -99,7 +99,7 @@
     settings.viewSizeHandler = ^(CGFloat maximumWidth) {
         return CGSizeMake(maximumWidth, 312.0f);
     };
-    MPNativeAdRendererConfiguration *config = [CENativeAdRenderer rendererConfigurationWithRendererSettings:settings];
+    MPNativeAdRendererConfiguration *config = [CEMPNativeAdRenderer rendererConfigurationWithRendererSettings:settings];
     
     MPNativeAdRequest *adRequest = [MPNativeAdRequest requestWithAdUnitIdentifier:Native_Unit_ID
                                                            rendererConfigurations:@[config]];
@@ -167,6 +167,7 @@
 #pragma mark - MoPub Interstitial Ad
 
 - (IBAction)loadInterstitialAd:(id)sender {
+    [self clearView];
     self.interstitial = [MPInterstitialAdController interstitialAdControllerForAdUnitId:Interstitial_Unit_ID];
     self.interstitial.delegate = self;
     [self.interstitial loadAd];
@@ -190,6 +191,7 @@
 #pragma mark - MoPub Rewarded Video Ad
 
 - (IBAction)loadRewardedAd:(id)sender {
+    [self clearView];
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         [[MoPub sharedInstance] initializeRewardedVideoWithGlobalMediationSettings:nil delegate:self];

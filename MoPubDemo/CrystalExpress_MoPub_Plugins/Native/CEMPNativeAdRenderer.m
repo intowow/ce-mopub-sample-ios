@@ -1,11 +1,11 @@
-//  Minimum support Intowow SDK 3.14.0
+//  Minimum support Intowow SDK 3.26.1
 //
 //  CENativeAdRenderer.m
 //
 //  Copyright © 2017 intowow. All rights reserved.
 //
 
-#import "CENativeAdRenderer.h"
+#import "CEMPNativeAdRenderer.h"
 #import "MPNativeAdRendererConfiguration.h"
 #import "MPStaticNativeAdRendererSettings.h"
 #import "MPNativeAdError.h"
@@ -18,7 +18,7 @@
 #import "CENativeAd.h"
 #import "UIView+CELayoutAdditions.h"
 
-@interface CENativeAdRenderer () <MPNativeAdRendererImageHandlerDelegate>
+@interface CEMPNativeAdRenderer () <MPNativeAdRendererImageHandlerDelegate>
 
 @property (nonatomic) UIView<MPNativeAdRendering> *adView;
 @property (nonatomic) id<MPNativeAdAdapter> adapter;
@@ -29,14 +29,14 @@
 @end
 
 
-@implementation CENativeAdRenderer
+@implementation CEMPNativeAdRenderer
 
 + (MPNativeAdRendererConfiguration *)rendererConfigurationWithRendererSettings:(id<MPNativeAdRendererSettings>)rendererSettings
 {
     MPNativeAdRendererConfiguration *config = [[MPNativeAdRendererConfiguration alloc] init];
     config.rendererClass = [self class];
     config.rendererSettings = rendererSettings;
-    config.supportedCustomEvents = @[@"CENativeCustomEvent"];
+    config.supportedCustomEvents = @[@"CEMPNativeCustomEvent"];
    
     return config;
 }

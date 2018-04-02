@@ -1,6 +1,6 @@
-//  Minimum support Intowow SDK 3.21.0
+//  Minimum support Intowow SDK 3.26.1
 //
-//  CERewardedVideoCustomEvent.h
+//  CEMPRewardedVideoCustomEvent.h
 //
 //  Copyright © 2017 intowow. All rights reserved.
 //
@@ -11,6 +11,6 @@
 #import "MPRewardedVideoCustomEvent.h"
 #endif
 
-@interface CERewardedVideoCustomEvent : MPRewardedVideoCustomEvent
+@interface CEMPRewardedVideoCustomEvent : MPRewardedVideoCustomEvent
 
 @end

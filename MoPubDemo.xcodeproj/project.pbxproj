@@ -218,13 +218,13 @@
 		971E99F31EE30398000AA271 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 971E99F21EE30398000AA271 /* SystemConfiguration.framework */; };
 		971E99F51EE3039E000AA271 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 971E99F41EE3039E000AA271 /* UIKit.framework */; };
 		973E9C9A200EF84C00A9EBE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 973E9C99200EF84C00A9EBE8 /* Assets.xcassets */; };
-		975284321FF2594D00C24571 /* CEInterstitialCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 975284311FF2594D00C24571 /* CEInterstitialCustomEvent.m */; };
-		975284361FF3863400C24571 /* CERewardedVideoCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 975284351FF3863400C24571 /* CERewardedVideoCustomEvent.m */; };
+		975284321FF2594D00C24571 /* CEMPInterstitialCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 975284311FF2594D00C24571 /* CEMPInterstitialCustomEvent.m */; };
+		975284361FF3863400C24571 /* CEMPRewardedVideoCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 975284351FF3863400C24571 /* CEMPRewardedVideoCustomEvent.m */; };
 		9796EC7B1EFA6B3B00478F48 /* AdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9796EC7A1EFA6B3B00478F48 /* AdViewController.m */; };
-		9796EC881EFA6B6900478F48 /* CECardCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 9796EC7F1EFA6B6900478F48 /* CECardCustomEvent.m */; };
-		9796EC8A1EFA6B6900478F48 /* CENativeAdAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9796EC831EFA6B6900478F48 /* CENativeAdAdapter.m */; };
-		9796EC8B1EFA6B6900478F48 /* CENativeAdRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9796EC851EFA6B6900478F48 /* CENativeAdRenderer.m */; };
-		9796EC8C1EFA6B6900478F48 /* CENativeCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 9796EC871EFA6B6900478F48 /* CENativeCustomEvent.m */; };
+		9796EC881EFA6B6900478F48 /* CEMPCardCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 9796EC7F1EFA6B6900478F48 /* CEMPCardCustomEvent.m */; };
+		9796EC8A1EFA6B6900478F48 /* CEMPNativeAdAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9796EC831EFA6B6900478F48 /* CEMPNativeAdAdapter.m */; };
+		9796EC8B1EFA6B6900478F48 /* CEMPNativeAdRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9796EC851EFA6B6900478F48 /* CEMPNativeAdRenderer.m */; };
+		9796EC8C1EFA6B6900478F48 /* CEMPNativeCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 9796EC871EFA6B6900478F48 /* CEMPNativeCustomEvent.m */; };
 		97B6CE721F32DA5900BCA800 /* UIView+CELayoutAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 97B6CE711F32DA5900BCA800 /* UIView+CELayoutAdditions.m */; };
 /* End PBXBuildFile section */
 
@@ -645,20 +645,20 @@
 		971E99F21EE30398000AA271 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		971E99F41EE3039E000AA271 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		973E9C99200EF84C00A9EBE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Resources/Assets.xcassets; sourceTree = "<group>"; };
-		975284301FF2594D00C24571 /* CEInterstitialCustomEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CEInterstitialCustomEvent.h; sourceTree = "<group>"; };
-		975284311FF2594D00C24571 /* CEInterstitialCustomEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CEInterstitialCustomEvent.m; sourceTree = "<group>"; };
-		975284341FF3863400C24571 /* CERewardedVideoCustomEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CERewardedVideoCustomEvent.h; sourceTree = "<group>"; };
-		975284351FF3863400C24571 /* CERewardedVideoCustomEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CERewardedVideoCustomEvent.m; sourceTree = "<group>"; };
+		975284301FF2594D00C24571 /* CEMPInterstitialCustomEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CEMPInterstitialCustomEvent.h; sourceTree = "<group>"; };
+		975284311FF2594D00C24571 /* CEMPInterstitialCustomEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CEMPInterstitialCustomEvent.m; sourceTree = "<group>"; };
+		975284341FF3863400C24571 /* CEMPRewardedVideoCustomEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CEMPRewardedVideoCustomEvent.h; sourceTree = "<group>"; };
+		975284351FF3863400C24571 /* CEMPRewardedVideoCustomEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CEMPRewardedVideoCustomEvent.m; sourceTree = "<group>"; };
 		9796EC791EFA6B3B00478F48 /* AdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdViewController.h; sourceTree = "<group>"; };
 		9796EC7A1EFA6B3B00478F48 /* AdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdViewController.m; sourceTree = "<group>"; };
-		9796EC7E1EFA6B6900478F48 /* CECardCustomEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CECardCustomEvent.h; sourceTree = "<group>"; };
-		9796EC7F1EFA6B6900478F48 /* CECardCustomEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CECardCustomEvent.m; sourceTree = "<group>"; };
-		9796EC821EFA6B6900478F48 /* CENativeAdAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CENativeAdAdapter.h; sourceTree = "<group>"; };
-		9796EC831EFA6B6900478F48 /* CENativeAdAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CENativeAdAdapter.m; sourceTree = "<group>"; };
-		9796EC841EFA6B6900478F48 /* CENativeAdRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CENativeAdRenderer.h; sourceTree = "<group>"; };
-		9796EC851EFA6B6900478F48 /* CENativeAdRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CENativeAdRenderer.m; sourceTree = "<group>"; };
-		9796EC861EFA6B6900478F48 /* CENativeCustomEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CENativeCustomEvent.h; sourceTree = "<group>"; };
-		9796EC871EFA6B6900478F48 /* CENativeCustomEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CENativeCustomEvent.m; sourceTree = "<group>"; };
+		9796EC7E1EFA6B6900478F48 /* CEMPCardCustomEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CEMPCardCustomEvent.h; sourceTree = "<group>"; };
+		9796EC7F1EFA6B6900478F48 /* CEMPCardCustomEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CEMPCardCustomEvent.m; sourceTree = "<group>"; };
+		9796EC821EFA6B6900478F48 /* CEMPNativeAdAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CEMPNativeAdAdapter.h; sourceTree = "<group>"; };
+		9796EC831EFA6B6900478F48 /* CEMPNativeAdAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CEMPNativeAdAdapter.m; sourceTree = "<group>"; };
+		9796EC841EFA6B6900478F48 /* CEMPNativeAdRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CEMPNativeAdRenderer.h; sourceTree = "<group>"; };
+		9796EC851EFA6B6900478F48 /* CEMPNativeAdRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CEMPNativeAdRenderer.m; sourceTree = "<group>"; };
+		9796EC861EFA6B6900478F48 /* CEMPNativeCustomEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CEMPNativeCustomEvent.h; sourceTree = "<group>"; };
+		9796EC871EFA6B6900478F48 /* CEMPNativeCustomEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CEMPNativeCustomEvent.m; sourceTree = "<group>"; };
 		97B6CE701F32DA5900BCA800 /* UIView+CELayoutAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CELayoutAdditions.h"; sourceTree = "<group>"; };
 		97B6CE711F32DA5900BCA800 /* UIView+CELayoutAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CELayoutAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1359,8 +1359,8 @@
 		9752842F1FF2592400C24571 /* Interstitial */ = {
 			isa = PBXGroup;
 			children = (
-				975284301FF2594D00C24571 /* CEInterstitialCustomEvent.h */,
-				975284311FF2594D00C24571 /* CEInterstitialCustomEvent.m */,
+				975284301FF2594D00C24571 /* CEMPInterstitialCustomEvent.h */,
+				975284311FF2594D00C24571 /* CEMPInterstitialCustomEvent.m */,
 			);
 			path = Interstitial;
 			sourceTree = "<group>";
@@ -1368,8 +1368,8 @@
 		975284331FF3861F00C24571 /* RewardedVideo */ = {
 			isa = PBXGroup;
 			children = (
-				975284341FF3863400C24571 /* CERewardedVideoCustomEvent.h */,
-				975284351FF3863400C24571 /* CERewardedVideoCustomEvent.m */,
+				975284341FF3863400C24571 /* CEMPRewardedVideoCustomEvent.h */,
+				975284351FF3863400C24571 /* CEMPRewardedVideoCustomEvent.m */,
 			);
 			path = RewardedVideo;
 			sourceTree = "<group>";
@@ -1400,8 +1400,8 @@
 		9796EC7D1EFA6B6900478F48 /* Banner */ = {
 			isa = PBXGroup;
 			children = (
-				9796EC7E1EFA6B6900478F48 /* CECardCustomEvent.h */,
-				9796EC7F1EFA6B6900478F48 /* CECardCustomEvent.m */,
+				9796EC7E1EFA6B6900478F48 /* CEMPCardCustomEvent.h */,
+				9796EC7F1EFA6B6900478F48 /* CEMPCardCustomEvent.m */,
 			);
 			path = Banner;
 			sourceTree = "<group>";
@@ -1409,12 +1409,12 @@
 		9796EC811EFA6B6900478F48 /* Native */ = {
 			isa = PBXGroup;
 			children = (
-				9796EC821EFA6B6900478F48 /* CENativeAdAdapter.h */,
-				9796EC831EFA6B6900478F48 /* CENativeAdAdapter.m */,
-				9796EC841EFA6B6900478F48 /* CENativeAdRenderer.h */,
-				9796EC851EFA6B6900478F48 /* CENativeAdRenderer.m */,
-				9796EC861EFA6B6900478F48 /* CENativeCustomEvent.h */,
-				9796EC871EFA6B6900478F48 /* CENativeCustomEvent.m */,
+				9796EC821EFA6B6900478F48 /* CEMPNativeAdAdapter.h */,
+				9796EC831EFA6B6900478F48 /* CEMPNativeAdAdapter.m */,
+				9796EC841EFA6B6900478F48 /* CEMPNativeAdRenderer.h */,
+				9796EC851EFA6B6900478F48 /* CEMPNativeAdRenderer.m */,
+				9796EC861EFA6B6900478F48 /* CEMPNativeCustomEvent.h */,
+				9796EC871EFA6B6900478F48 /* CEMPNativeCustomEvent.m */,
 			);
 			path = Native;
 			sourceTree = "<group>";
@@ -1609,7 +1609,7 @@
 				971E97251EE29163000AA271 /* AppDelegate.m in Sources */,
 				971E99631EE29995000AA271 /* MPTableViewCellImpressionTracker.m in Sources */,
 				971E99001EE29995000AA271 /* MPProgressOverlayView.m in Sources */,
-				9796EC8A1EFA6B6900478F48 /* CENativeAdAdapter.m in Sources */,
+				9796EC8A1EFA6B6900478F48 /* CEMPNativeAdAdapter.m in Sources */,
 				971E99771EE29995000AA271 /* MOPUBActivityIndicatorView.m in Sources */,
 				971E991A1EE29995000AA271 /* MPMRAIDBannerCustomEvent.m in Sources */,
 				971E98ED1EE29995000AA271 /* MPBannerAdManager.m in Sources */,
@@ -1625,8 +1625,8 @@
 				971E99481EE29995000AA271 /* MPVASTResponse.m in Sources */,
 				97B6CE721F32DA5900BCA800 /* UIView+CELayoutAdditions.m in Sources */,
 				971E99531EE29995000AA271 /* MPAdPlacerInvocation.m in Sources */,
-				9796EC881EFA6B6900478F48 /* CECardCustomEvent.m in Sources */,
-				9796EC8C1EFA6B6900478F48 /* CENativeCustomEvent.m in Sources */,
+				9796EC881EFA6B6900478F48 /* CEMPCardCustomEvent.m in Sources */,
+				9796EC8C1EFA6B6900478F48 /* CEMPNativeCustomEvent.m in Sources */,
 				971E99A01EE29995000AA271 /* MPRewardedVideoError.m in Sources */,
 				971E99121EE29995000AA271 /* MPBaseInterstitialAdapter.m in Sources */,
 				971E98FD1EE29995000AA271 /* MPEnhancedDeeplinkRequest.m in Sources */,
@@ -1706,7 +1706,7 @@
 				971E993E1EE29995000AA271 /* MPVASTCreative.m in Sources */,
 				971E99211EE29995000AA271 /* MRController.m in Sources */,
 				971E99A11EE29995000AA271 /* MPRewardedVideoReward.m in Sources */,
-				975284321FF2594D00C24571 /* CEInterstitialCustomEvent.m in Sources */,
+				975284321FF2594D00C24571 /* CEMPInterstitialCustomEvent.m in Sources */,
 				971E996D1EE29995000AA271 /* MPNativeAdRequest.m in Sources */,
 				971E98EF1EE29995000AA271 /* MPBaseBannerAdapter.m in Sources */,
 				971E99741EE29995000AA271 /* MPStreamAdPlacementData.m in Sources */,
@@ -1728,7 +1728,7 @@
 				971E99101EE29995000AA271 /* MPHTMLInterstitialViewController.m in Sources */,
 				971E99091EE29995000AA271 /* MPLogEventRecorder.m in Sources */,
 				971E994B1EE29995000AA271 /* MPVASTWrapper.m in Sources */,
-				9796EC8B1EFA6B6900478F48 /* CENativeAdRenderer.m in Sources */,
+				9796EC8B1EFA6B6900478F48 /* CEMPNativeAdRenderer.m in Sources */,
 				971E997B1EE29995000AA271 /* MOPUBNativeVideoAdAdapter.m in Sources */,
 				971E995E1EE29995000AA271 /* MPNativePositionResponseDeserializer.m in Sources */,
 				971E99271EE29995000AA271 /* NSBundle+MPAdditions.m in Sources */,
@@ -1749,7 +1749,7 @@
 				971E99371EE29995000AA271 /* MPReachability.m in Sources */,
 				971E99171EE29995000AA271 /* MPInstanceProvider.m in Sources */,
 				971E990E1EE29995000AA271 /* MPHTMLBannerCustomEvent.m in Sources */,
-				975284361FF3863400C24571 /* CERewardedVideoCustomEvent.m in Sources */,
+				975284361FF3863400C24571 /* CEMPRewardedVideoCustomEvent.m in Sources */,
 				971E990F1EE29995000AA271 /* MPHTMLInterstitialCustomEvent.m in Sources */,
 				971E994D1EE29995000AA271 /* MPAdConversionTracker.m in Sources */,
 				971E99541EE29995000AA271 /* MPCollectionViewAdPlacerCell.m in Sources */,
