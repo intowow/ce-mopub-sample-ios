@@ -24,6 +24,10 @@ The custom event is under folder 'MoPubDemo/CrystalExpress_MoPub_Plugins/'
 
 ## CHANGELOG
 
+#### Version 5 (2018-03-23)
+* Refine custom event for new CrystalExpress SDK interface.
+
+
 #### Version 4 (2018-01-05)
 * MoPub custom event support interstitial format.
 * MoPub custom event support rewarded video format
