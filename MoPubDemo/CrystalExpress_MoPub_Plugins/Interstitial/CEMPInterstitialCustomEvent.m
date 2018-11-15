@@ -11,7 +11,7 @@
 
 #define Default_Interstitial_Timeout 10
 
-@interface CEMPInterstitialCustomEvent () <CESplash2ADDelegate>
+@interface CEMPInterstitialCustomEvent () <CESplash2ADRequestDelegate, CESplash2ADEventDelegate>
 
 @property (nonatomic, strong) CESplash2AD *ceSplashAD;
 
@@ -38,8 +38,8 @@
         reqInfo.placement = placement;
         reqInfo.timeout = Default_Interstitial_Timeout;
         _ceSplashAD = [[CESplash2AD alloc] initWithVideoViewProfile:CEVideoViewProfileSplash2DefaultProfile];
-        [_ceSplashAD setDelegate:self];
-        [_ceSplashAD loadAdWithInfo:reqInfo];
+        [_ceSplashAD setEventDelegate:self];
+        [_ceSplashAD loadAdAsyncWithInfo:reqInfo reqDelegate:self];
     }
     @catch(NSException *e) {
         MPLogError(@"CrystalExpress Interstitial failed to load with error : %@", e);
@@ -54,7 +54,7 @@
     });
 }
 
-#pragma mark - CESplash2ADDelegate
+#pragma mark - CESplash2ADRequestDelegate
 - (void)splash2ADDidLoaded:(CESplash2AD *)splash2AD
 {
     MPLogInfo(@"Interstitial ad did load");
@@ -67,6 +67,7 @@
     [self.delegate interstitialCustomEvent:self didFailToLoadAdWithError:error];
 }
 
+#pragma mark - CESplash2ADEventDelegate
 - (void)splash2ADWillDisplay:(CESplash2AD *)splash2AD
 {
     MPLogInfo(@"Interstitial ad will appear");
@@ -75,7 +76,7 @@
 
 - (void)splash2ADDidDisplayed:(CESplash2AD *)splash2AD
 {
-    MPLogInfo(@"Interstitial ad did appeat");
+    MPLogInfo(@"Interstitial ad did appear");
     [self.delegate interstitialCustomEventDidAppear:self];
 }
 

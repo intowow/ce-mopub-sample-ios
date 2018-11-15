@@ -14,7 +14,7 @@
 
 #define Default_Native_Timeout 10
 
-@interface CEMPNativeCustomEvent () <CENativeAdDelegate>
+@interface CEMPNativeCustomEvent () <CENativeAdRequestDelegate>
 
 @property (nonatomic, readwrite, strong) CENativeAd * ceNativeAd;
 @property (nonatomic, readwrite, strong) NSDictionary * serverInfo;
@@ -41,11 +41,10 @@
     reqInfo.placement = placement;
     reqInfo.timeout = Default_Native_Timeout;
     _ceNativeAd = [[CENativeAd alloc] init];
-    _ceNativeAd.delegate = self;
-    [_ceNativeAd loadAdWithInfo:reqInfo];
+    [_ceNativeAd loadAdAsyncWithInfo:reqInfo reqDelegate:self];
 }
 
-#pragma mark - CENativeAdDelegate
+#pragma mark - CENativeAdRequestDelegate
 - (void) nativeAdDidLoad:(CENativeAd *)nativeAd
 {
     CEMPNativeAdAdapter *adAdapter = [[CEMPNativeAdAdapter alloc] initWithCENativeAd:nativeAd adProperties:_serverInfo];

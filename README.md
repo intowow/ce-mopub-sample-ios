@@ -24,6 +24,10 @@ The custom event is under folder 'MoPubDemo/CrystalExpress_MoPub_Plugins/'
 
 ## CHANGELOG
 
+#### Version 6 (2018-11-15)
+* Refine custom event for new CrystalExpress SDK interface.
+
+
 #### Version 5 (2018-03-23)
 * Refine custom event for new CrystalExpress SDK interface.
 
