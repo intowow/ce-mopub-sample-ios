@@ -11,7 +11,7 @@
 #import "CEMediaView.h"
 #import "CEVideoViewProfile.h"
 
-@interface CEMPNativeAdAdapter () <CENativeAdDelegate>
+@interface CEMPNativeAdAdapter () <CENativeAdEventDelegate>
 
 @property (nonatomic, readonly) CENativeAd * ceNativeAd;
 @property (nonatomic, readonly) CEMediaView * ceMediaView;
@@ -26,7 +26,7 @@
 {
     if (self = [super init]) {
         _ceNativeAd = nativeAd;
-        _ceNativeAd.delegate = self;
+        [_ceNativeAd setEventDelegate:self];
         
         NSMutableDictionary * properties;
         if (adProps) {
@@ -96,7 +96,7 @@
     return self.ceMediaView;
 }
 
-#pragma mark - CENativeAdDelegate
+#pragma mark - CENativeAdEventDelegate
 
 - (void)nativeAdWillTrackImpression:(CENativeAd *)nativeAd
 {

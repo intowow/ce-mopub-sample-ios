@@ -12,7 +12,7 @@
 
 #define Default_Card_Timeout 10
 
-@interface CEMPCardCustomEvent () <CECardADDelegate>
+@interface CEMPCardCustomEvent () <CECardADRequestDelegate>
 
 @property (nonatomic, strong) CECardAD *ceCardAd;
 @property (nonatomic, assign) CGSize adSize;
@@ -44,11 +44,10 @@
     reqInfo.placement = placement;
     reqInfo.timeout = Default_Card_Timeout;
     _ceCardAd = [[CECardAD alloc] initWithVideoViewProfile:CEVideoViewProfileCardDefaultProfile];
-    [_ceCardAd setDelegate:self];
-    [_ceCardAd loadAdWithInfo:reqInfo];
+    [_ceCardAd loadAdAsyncWithInfo:reqInfo reqDelegate:self];
 }
 
-#pragma mark - CECardADDelegate
+#pragma mark - CECardADRequestDelegate
 
 - (void)cardADDidLoaded:(CECardAD *)cardAD
 {

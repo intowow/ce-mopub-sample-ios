@@ -11,7 +11,7 @@
 
 #define Default_Rewarded_Timeout 10
 
-@interface CEMPRewardedVideoCustomEvent () <CERewardedVideoADDelegate>
+@interface CEMPRewardedVideoCustomEvent () <CERewardedVideoADRequestDelegate, CERewardedVideoADEventDelegate>
 
 @property (nonatomic, strong) CERewardedVideoAD *ceRewardedAD;
 
@@ -37,8 +37,8 @@
         reqInfo.placement = placement;
         reqInfo.timeout = Default_Rewarded_Timeout;
         _ceRewardedAD = [[CERewardedVideoAD alloc] init];
-        [_ceRewardedAD setDelegate:self];
-        [_ceRewardedAD loadAdWithInfo:reqInfo];
+        [_ceRewardedAD setEventDelegate:self];
+        [_ceRewardedAD loadAdAsyncWithInfo:reqInfo reqDelegate:self];
     }
     @catch(NSException *e) {
         MPLogError(@"CrystalExpress rewarded video failed to load with error : %@", e);
@@ -67,7 +67,7 @@
     _ceRewardedAD = nil;
 }
 
-#pragma mark - CERewardedVideoADDelegate
+#pragma mark - CERewardedVideoADRequestDelegate
 -(void)rewardedVideoADDidLoaded:(CERewardedVideoAD *)rewardedVideoAD
 {
     MPLogInfo(@"Rewarded video ad did load");
@@ -80,6 +80,7 @@
     [self.delegate rewardedVideoDidFailToLoadAdForCustomEvent:self error:error];
 }
 
+#pragma mark - CERewardedVideoADEventDelegate
 -(void)rewardedVideoADWillDisplay:(CERewardedVideoAD *)rewardedVideoAD
 {
     MPLogInfo(@"Rewarded video ad will display");
